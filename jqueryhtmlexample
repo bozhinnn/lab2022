@@ -4,7 +4,7 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
+
       <title>Simple website</title>
       <link rel="stylesheet" href="main.css">
       <script src="app.js" defer></script>
@@ -15,22 +15,30 @@
   
   
 
-      <script src ="jquery.js"> </script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
       <script>
         
         $(document).ready(function()
         {
-            document.write("hello world");
+            $("p").css("color","orange");
+        $(".change").css("color","red");
+        $("#p1").css("color","blue");
+
         });
-        
       </script>
-  
     </head>
 
-
     <body>
-      
+
+
+        <p id="p1"> this is part 2 </p>
+        <p class ="change"> this is part 3 </p>
+        <p> this is part 1 </p>
   
+
+
+
+
+
   </body>
-  
   </html>

@@ -1,7 +1,5 @@
 
 
-
-
 function addTwo(num1, num2) {
     let result = num1 + num2;
     return result;
@@ -9,7 +7,7 @@ function addTwo(num1, num2) {
   
   function onClick() {
     const num1 = document.querySelector("#first").value;
-    const num2 = document.querySelector("#second").value;
+    const num2 = document.querySelector("#first").value;
   
     const res = addTwo(parseInt(num1), parseInt(num2));
     let resultDiv = document.querySelector("#result");
@@ -20,6 +18,13 @@ function addTwo(num1, num2) {
   button.addEventListener("click", onClick);
   
 const switcher = document.querySelector('.btn');
+
+
+
+
+
+
+
 
 switcher.addEventListener('click', function() {
     document.body.classList.toggle('light-theme');
